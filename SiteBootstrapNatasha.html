@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Natasha</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	</head>
+
+<style>
+	.navbar-brand
+	{
+		text-decoration-color: #000000;
+	}
+	
+	.navbar
+	{
+		background: #FFFFFF; 
+		text-align: center;
+	
+	}
+	.jumbotron
+	{
+		background-color: #441026;
+		text-align: center;
+			
+	}
+	.page-header
+	{
+		text-align: center;
+	}
+	
+	</style>
+
+<body id="page-top" ">
+
+  <!------ MENU -------->
+
+     <nav class="navbar navbar-default navbar-fixed-top"
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#topo">N by N</a>
+          </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#topo">Home</a></li>
+          <li><a href="#imagens">Imagens</a></li>
+          <li><a href="#sobre">Sobre</a></li> 
+          <li><a href="#contato">Contato</a></li> 
+        </ul>
+      </div>
+    </nav>
+
+    <header class="masthead bg-primary text-white text-center">
+		<div class="jumbotron" id="topo">
+			  <div class="container">
+				<img class="img-fluid img-circle mb-5 d-block mx-auto" style="width: 15%" src="eu.png" alt=""/>
+				<h1 class="text-uppercase mb-0">Natasha Catrópa</h1>
+				<hr class="star-light">
+				<h2 class="font-weight-light mb-0">Designer Multimídia</h2>
+			  </div>
+		</div>
+    </header>
+    <section class="Imagens" id="imagens">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Imagens</h2>
+        <hr class="star-dark mb-5">
+		</div>
+    <p>
+      <center>
+		<img src="flor.png" class="img-fluid img-circle mb-5 d-block mx-auto" style="width: 30%" />
+  </center>
+  </p>
+  <p>
+    <center>
+  <img src="piano.png" class="img-fluid img-circle mb-5 d-block mx-auto" style="width: 40%" />
+</center>
+</p>
+<p>
+  <center>
+		<img src="nuvens.png" class="img-fluid img-circle mb-5 d-block mx-auto" style="width: 30%" />
+  </center>
+</p>
+<p>
+  <center>
+		<img src="paisagem.png" class="img-fluid img-circle mb-5 d-block mx-auto" style="width: 40%"  id="sobre"/>
+  </center>
+</p>
+		
+
+
+	</section>
+    <section class="bg-primary text-white mb-0" style="background: #441026 " id="sobre">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Sobre</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-6 ml-auto">
+            <p class="lead">  Meu nome é Natasha Catrópa, faço design multimídia no Centro Universitário Senac Santo Amaro.
+              Tenho como hobbies tirar fotos e tocar piano.
+            Trabalhei na loja online, chamada Cupido LoveStore, na qual eu era responsável pela divulgação na mídia.</p>
+          </div>
+          <div class="col-lg-6 mr-auto">
+            <p class="lead">Estudei na escola alemã Benjamin Constant, onde aprendi a língua alemã.
+            Além de tocar piano, fiz teatro e canto no colégio. Quando se trata de criatividade, sou muito competente. Gosto de editar imagens, vídeos e áudios.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <section id="contato">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Contato</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Nome</label>
+                  <input class="form-control" id="nome" type="text" placeholder="Nome" required="required" data-validation-required-message="Entre com seu nome.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Email </label>
+                  <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Entre com seu email.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Número de Telefone</label>
+                  <input class="form-control" id="telefone" type="tel" placeholder="Número de Telefone" required="required" data-validation-required-message="Entre com seu número de telefone.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Mensagem</label>
+                  <textarea class="form-control" id="mensagem" rows="5" placeholder="Mensagem" required="required" data-validation-required-message="Escreva sua mensagem."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Enviar</button>
+                </section>
+    <section class="bg-primary text-white mb-0" style="background: #441026 " id="sobre">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Informações</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-6 ml-auto">
+            <p class="lead"> <img src="face.png" class="img-fluid img-circle mb-5 d-block mx-auto" style="width: 5%" /> https://www.facebook.com/natasha.catropamatos</p>
+           <p class="lead"> <img src="linkedin.png" class="img-fluid img-circle mb-5 d-block mx-auto" style="width: 7%" /> https://www.linkedin.com/in/natasha-catropa/</p>
+           <p class="lead"> <img src="gmail.png" class="img-fluid img-circle mb-5 d-block mx-auto" style="width: 5%" /> natasha.c.matos@gmail.com</p>
+            <p class="lead"> <img src="insta.png" class="img-fluid img-circle mb-5 d-block mx-auto" style="width: 5%" /> @nanicatropa</p>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
